@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import { func } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function Section({ title, children }) {
   return (
@@ -11,3 +9,8 @@ export default function Section({ title, children }) {
     </section>
   );
 }
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.objectOf(PropTypes.func.isRequired),
+};

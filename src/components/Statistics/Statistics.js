@@ -10,7 +10,6 @@ export default function Statistics({
 }) {
   return (
     <div>
-      <h2>Statistics</h2>
       <ul>
         <li>
           <p>Good: {good}</p>

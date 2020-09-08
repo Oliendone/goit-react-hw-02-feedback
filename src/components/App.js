@@ -32,14 +32,14 @@ export default class App extends Component {
 
   render() {
     const total = this.countTotalFeedback();
-
+    const isAnyFeedbacks = total > 0;
     return (
       <>
         <Section title="Plese leave feedback">
           <FeedbackOptions onLeaveFeedback={this.handleFeedback} />
         </Section>
         <Section title="Statistics">
-          {total > 0 ? (
+          {isAnyFeedbacks ? (
             <Statistics
               {...this.state}
               total={total}

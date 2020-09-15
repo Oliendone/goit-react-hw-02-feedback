@@ -1,9 +1,5 @@
 import React from 'react';
 
 export default function Notification({ message }) {
-  return (
-    <>
-      <p>{message}</p>
-    </>
-  );
+  return <p>{message}</p>;
 }
